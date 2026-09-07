@@ -1,0 +1,17 @@
+### Spotify
+
+* Como Sete Lagoas sobrevive no WhatsApp — [https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/6P1nziDfrZr0IdeL0iuLbb/details](https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/6P1nziDfrZr0IdeL0iuLbb/details)
+* O diagnóstico psiquiátrico do sistema político brasileiro — [https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/5BFtfjOmNoU4S25fYkkXRU/details](https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/5BFtfjOmNoU4S25fYkkXRU/details)
+* POLÍTICA, FUTEBOL E FÉ: A renúncia mais inusitada de 2026! ⚽️⚖️ — [https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/2M6WPNoRAwHA4A0gL3ZJxH/details](https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/2M6WPNoRAwHA4A0gL3ZJxH/details)
+* Prensa ou Caravela? A Inteligência Artificial e a Nova Menoridade Digital — [https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/2Vh2MKESJCco1kQdIT9kR7/details](https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/2Vh2MKESJCco1kQdIT9kR7/details)
+* Cidades Criativas e as Falhas do Comunismo: O Contraste entre a Inovação Local e a Centralização Estatal — [https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/5YoJDdDBEWavkEMZofbsPc/details](https://creators.spotify.com/pod/show/13nFwoErwInfTBOM549XsA/episode/5YoJDdDBEWavkEMZofbsPc/details)
+
+### YouTube
+
+* Socialismo Criativo vs. Socialismo Chinês: Qual é a Diferença Real? | Aula Completa — [https://www.youtube.com/watch?v=E3Aay-5RUzY](https://www.youtube.com/watch?v=E3Aay-5RUzY)
+* Dois Socialismos: João Campos, o PSB e a Rota do Desenvolvimento Chinês — [https://www.youtube.com/watch?v=2FhSvFvxRX0](https://www.youtube.com/watch?v=2FhSvFvxRX0)
+* A Inteligência Artificial vai ATROFIAR nossa mente? O perigo do "Iluminismo 4.0 — [https://www.youtube.com/watch?v=uC4PezsgAgU](https://www.youtube.com/watch?v=uC4PezsgAgU)
+* Cidades Criativas: Como a Inovação e a Tecnologia Podem Transformar os Municípios — [https://www.youtube.com/watch?v=VUMH1j-I-kQ](https://www.youtube.com/watch?v=VUMH1j-I-kQ)
+# Adicione uma atividade por linha neste formato:
+# video | Aula 1 — título | https://...
+# podcast | Episódio 1 — título | https://...

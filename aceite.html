@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Termo de aceite | Formação Centro-Esquerda</title><link rel="stylesheet" href="styles.css"></head>
+<body class="course-page loading">
+  <header class="course-header"><a class="brand" href="index.html">Formação Centro-Esquerda</a><span id="member-name"></span><button id="logout" class="secondary">Sair</button></header>
+  <main class="acceptance-page">
+    <p class="eyebrow">PASSO 2 DE 2</p>
+    <h1>Está tudo pronto?</h1>
+    <p class="lead">Confira seu nome, leia como funciona e marque a caixinha no fim da página. Depois é só apertar o botão.</p>
+    <section class="acceptance-grid">
+      <div>
+        <section class="acceptance-section"><p class="eyebrow">Seu perfil</p><dl class="profile-data acceptance-data"><div><dt>Nome</dt><dd id="profile-name">—</dd></div><div><dt>E-mail</dt><dd id="profile-email">—</dd></div></dl></section>
+        <section class="acceptance-section"><p class="eyebrow">Ementa</p><p>Formação Centro-Esquerda é um percurso popular de leitura, conversa e aplicação prática sobre trabalho, comunidade, democracia, ética pública, conhecimento, cidades e projeto territorial.</p><p><strong>Duração estimada:</strong> 6 semanas, com 1 módulo por semana e aproximadamente 2 a 3 horas de estudo por módulo. O aluno pode avançar no próprio ritmo, respeitando a liberação sequencial.</p></section>
+        <section class="acceptance-section gamification-explainer"><p class="eyebrow">Como funciona</p><h2>Aprender, comprovar e avançar</h2><ul><li><strong>Sem enrolação:</strong> cada módulo junta leitura, mídia, conversa e uma tarefa prática.</li><li><strong>XP:</strong> você ganha pontos ao registrar a leitura e concluir as mídias.</li><li><strong>Aprovação:</strong> cada módulo exige a leitura, as mídias atribuídas e pelo menos 2 acertos em 3 perguntas específicas do conteúdo.</li><li><strong>Liberação:</strong> os módulos são sequenciais. Ao concluir uma missão, o próximo módulo é liberado e você recebe uma medalha.</li><li><strong>Certificado:</strong> depois dos módulos e do questionário final, o certificado fica disponível para impressão em PDF.</li></ul></section>
+      </div>
+      <section class="course-map acceptance-section"><p class="eyebrow">Mapa do curso</p><div id="course-map"></div></section>
+    </section>
+    <form id="acceptance-form" class="acceptance-form"><label class="acceptance-check"><input id="acceptance-checkbox" type="checkbox" required><span>Li as informações acima e quero começar o curso. Pode guardar meu progresso para eu saber onde parei.</span></label><button id="acceptance-submit" type="submit">Aperte aqui para começar</button><p id="acceptance-status" role="status"></p></form>
+  </main>
+  <script type="module" src="aceite.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "rules": {
+    ".read": false,
+    "enrollments": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && ((auth.uid === $uid && !data.exists() && newData.val() === true) || root.child('roles').child(auth.uid).val() === 'admin')"
+      }
+    },
+    "roles": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'admin')",
+        ".write": "auth != null && root.child('roles').child(auth.uid).val() === 'admin'"
+      }
+    },
+    "users": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')",
+        ".write": "auth != null && auth.uid === $uid && !data.exists() && newData.hasChildren(['name', 'email', 'createdAt'])"
+      }
+    },
+    "acceptances": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid && !data.exists() && newData.hasChildren(['name', 'email', 'acceptedAt', 'version'])"
+      }
+    },
+    "notes": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "answers": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "progress": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "attendance": {
+      "$classId": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')",
+          ".write": "auth != null && (root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')"
+        }
+      }
+    },
+    "grades": {
+      "$classId": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid === $uid || root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')",
+          ".write": "auth != null && (root.child('roles').child(auth.uid).val() === 'educator' || root.child('roles').child(auth.uid).val() === 'admin')"
+        }
+      }
+    }
+  }
+}

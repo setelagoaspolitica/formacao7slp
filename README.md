@@ -24,6 +24,10 @@ As apostilas `apostila1.pdf`, `socialismoCriativo2.pdf` e `socialismoCriativo3.p
 - **Popular:** usa exemplos do dia a dia, evita jargão e conecta teoria com problemas reais.
 - **Replicável:** títulos, objetivos, resumos, fontes, perguntas e critérios ficam organizados em `course-content.js`, facilitando criar outra turma ou outro curso.
 
+## Como criar outro curso
+
+Os cursos ficam em `courses/`. Para adicionar uma formação, crie uma pasta própria com um `course.json`, uma pasta `pdf/`, um `links.txt` e um arquivo de conteúdo com os módulos, resumos, referências e perguntas. Depois inclua o curso em `course-catalog.js`. A tela inicial já mostra a opção para o aluno escolher a formação.
+
 ## Fluxo do aluno
 
 Antes do primeiro módulo, a tela de aceite explica a pontuação e os critérios de aprovação. Em cada módulo, o aluno encontra o objetivo, um resumo de estudo, uma dica de prova e links para os trechos indicados dos PDFs.
@@ -74,4 +78,4 @@ Colete somente nome, usuário do Telegram e e-mail quando necessários. Informe 
 O progresso é calculado a partir dos registros de leitura, mídias concluídas, provas dos módulos e questionário final. A aplicação concede XP e medalhas, mas não substitui uma avaliação institucional formal. `links.txt` aceita a lista Markdown organizada sob `### Spotify` e `### YouTube` ou o formato `tipo | título | URL`; os itens entram automaticamente na missão do módulo.
 
 Os questionários servem para acompanhamento formativo e são corrigidos no navegador; para emissão de certificado, a equipe deve revisar o projeto e a participação. Uma nota inviolável exigiria uma Cloud Function/Admin SDK para corrigir no servidor — não é possível garantir isso usando apenas HTML e banco acessado pelo navegador.
-# formacao7slp
+# formação7slp — Sete Lagoas Política

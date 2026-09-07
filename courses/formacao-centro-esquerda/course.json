@@ -1,0 +1,10 @@
+{
+  "id": "formacao-centro-esquerda",
+  "title": "Formação Centro-Esquerda",
+  "subtitle": "Esquerda Conservadora",
+  "description": "Formação popular, sem enrolação, para melhorar a vida do povo com trabalho, comunidade, responsabilidade, democracia e serviço público.",
+  "duration": "6 semanas",
+  "contentModule": "../../course-content.js",
+  "linksFile": "links.txt",
+  "pdfFolder": "pdf/"
+}
