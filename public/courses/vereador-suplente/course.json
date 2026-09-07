@@ -1,0 +1,10 @@
+{
+  "id": "vereador-suplente",
+  "title": "Vereador e Suplente",
+  "subtitle": "Formação para atuação política e responsabilidade pública",
+  "description": "Curso para compreender as funções do mandato, a ética parlamentar, a representação popular e a responsabilidade com o povo.",
+  "duration": "4 semanas",
+  "contentModule": "../../course-content.js",
+  "linksFile": "links.txt",
+  "pdfFolder": "pdf/"
+}

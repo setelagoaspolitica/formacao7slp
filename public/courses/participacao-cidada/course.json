@@ -1,0 +1,10 @@
+{
+  "id": "participacao-cidada",
+  "title": "Participação Cidadã",
+  "subtitle": "Formação para ação e engajamento comunitário",
+  "description": "Curso para fortalecer escuta, organização comunitária, democracia local e propostas de transformação no território.",
+  "duration": "4 semanas",
+  "contentModule": "../../course-content.js",
+  "linksFile": "links.txt",
+  "pdfFolder": "pdf/"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "cidadania-e-participacao",
+  "title": "Cidadania e Participação",
+  "subtitle": "Formação complementar",
+  "description": "Formação para fortalecer a escuta, a participação comunitária e a atuação cidadã no território.",
+  "duration": "4 semanas",
+  "contentModule": "../../course-content.js",
+  "linksFile": "links.txt",
+  "pdfFolder": "pdf/"
+}

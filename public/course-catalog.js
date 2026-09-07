@@ -9,6 +9,33 @@ export const courseCatalog = [
     active: true
   },
   {
+    id: "participacao-cidada",
+    category: "Cidadania e Comunidade",
+    title: "Participação Cidadã",
+    subtitle: "Formação para ação e engajamento comunitário",
+    description: "Curso para fortalecer escuta, organização comunitária, democracia local e propostas de transformação no território.",
+    status: "Disponível",
+    active: true
+  },
+  {
+    id: "vereador-suplente",
+    category: "Formação Política",
+    title: "Vereador e Suplente",
+    subtitle: "Formação para atuação política e responsabilidade pública",
+    description: "Curso para entender mandato, representação popular, atuação parlamentar e responsabilidade com a cidade.",
+    status: "Disponível",
+    active: true
+  },
+  {
+    id: "cidadania-e-participacao",
+    category: "Cidadania e Comunidade",
+    title: "Cidadania e Participação",
+    subtitle: "Formação complementar",
+    description: "Fortalece a escuta, a participação e a ação cidadã no território.",
+    status: "Disponível",
+    active: true
+  },
+  {
     id: "democracia-no-bairro",
     category: "Formação Política",
     title: "Democracia no Bairro",
