@@ -5,6 +5,15 @@
 .login-card .step-label { color:#54765e; }
 .course-picker { margin:1rem 0; }
 .course-picker > .eyebrow { margin-bottom:.5rem; }
+.enrolled-courses { display:grid; gap:.6rem; }
+.enrolled-course { display:grid; gap:.3rem; }
+.course-empty { display:grid; gap:.2rem; padding:.9rem; border:1px dashed #b9c8a1; background:#fffdf8; color:#516158; font-size:.82rem; }
+.course-empty strong { color:var(--green); }
+.course-add-toggle { margin-top:.8rem; }
+.course-stop { justify-self:start; padding:.2rem 0; color:#7b3e32; background:transparent; font-size:.75rem; font-weight:650; }
+.course-add-panel { margin-top:.8rem; padding-top:.8rem; border-top:1px solid var(--line); }
+.course-add-panel[hidden] { display:none; }
+.course-add-title { margin:0 0 .55rem; color:#54765e; font-size:.75rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
 .course-category { margin-top:.7rem; border:1px solid var(--line); background:var(--mist); }
 .course-category summary { display:flex; justify-content:space-between; gap:.75rem; align-items:center; padding:.7rem .85rem; color:var(--green); font-weight:800; cursor:pointer; list-style:none; }
 .course-category summary::-webkit-details-marker { display:none; }

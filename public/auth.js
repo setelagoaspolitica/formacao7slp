@@ -33,6 +33,24 @@ function authMessage(error) {
 async function isEnrolled(uid) { return (await get(ref(db, `enrollments/${uid}`))).val() === true; }
 async function hasAcceptedTerms(uid) { return (await get(ref(db, `acceptances/${uid}`))).exists(); }
 async function enroll(user) { await Promise.all([set(ref(db, `enrollments/${user.uid}`), true), set(ref(db, `users/${user.uid}`), { name: user.displayName || "", email: user.email || "", createdAt: Date.now() })]); }
+export async function resetCurrentUserCourseState() {
+  const user = auth.currentUser;
+  const resetTargets = user ? [
+    `enrollments/${user.uid}`,
+    `acceptances/${user.uid}`,
+    `progress/${user.uid}`,
+    `answers/${user.uid}`,
+    `notes/${user.uid}`
+  ] : [];
+
+  if (resetTargets.length) {
+    await Promise.all(resetTargets.map((path) => set(ref(db, path), null)));
+  }
+
+  localStorage.removeItem("selectedCourseId");
+  localStorage.removeItem("enrolledCourseIds");
+  localStorage.removeItem("formacaoSocialistaUser");
+}
 async function enterIfEnrolled(user) { if (!(await isEnrolled(user.uid))) await enroll(user); localStorage.setItem("formacaoSocialistaUser", JSON.stringify({ uid: user.uid, name: user.displayName || user.email || "Usuário", updatedAt: Date.now() })); location.assign(await hasAcceptedTerms(user.uid) ? "modulo-1.html" : "aceite.html"); }
 
 if ($("#google-login")) {
@@ -52,6 +70,18 @@ if ($("#google-login")) {
     renderCoursePicker(coursePicker, () => {
       loginBtn.disabled = false;
       showMessage("Formação selecionada. Clique em começar.");
+    }, async () => {
+      try {
+        await resetCurrentUserCourseState();
+        showMessage("Formação interrompida. Todo o progresso foi zerado.");
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Aperte aqui para entrar";
+        stepLabel.textContent = "PASSO 1 DE 2";
+        loginTitle.textContent = "Vamos começar?";
+        loginDescription.textContent = "Aperte o botão abaixo para entrar na plataforma.";
+      } catch (error) {
+        showMessage(authMessage(error), true);
+      }
     });
     if (!coursePicker.parentElement) loginCard.insertBefore(coursePicker, loginBtn);
     stepLabel.textContent = "PASSO 2 DE 2";
