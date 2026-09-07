@@ -1,5 +1,14 @@
 {
   "database": {
     "rules": "firebase.rules.json"
+  },
+  "hosting": {
+    "site": "formacaosetelagoaspolitica",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
