@@ -1,9 +1,11 @@
 import { requireEnrollment, leaveCourse, db } from "./auth.js";
 import { ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
-import { courseInfo, modules } from "./courses/formacao-centro-esquerda/course.js";
+import { getCourseModulePath } from "./course-catalog.js";
 import { getGamificationState } from "./gamification.js";
 
 const $ = (selector) => document.querySelector(selector);
+const selectedCourseId = localStorage.getItem("selectedCourseId") || "formacao-centro-esquerda";
+const { courseInfo, modules } = await import(getCourseModulePath(selectedCourseId));
 document.title = `Perfil | ${courseInfo.shortTitle}`;
 document.querySelector(".brand").textContent = courseInfo.shortTitle;
 const escapeHtml = (value) => { const element = document.createElement("div"); element.textContent = value; return element.innerHTML; };

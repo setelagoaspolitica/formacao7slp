@@ -7,11 +7,11 @@ export const courseInfo = {
 };
 
 export const modules = [
-  ["Mandato e representação", "Compreender a importância do mandato, da representação popular e da relação com o eleitor."],
-  ["Papel do vereador", "Analisar a atuação legislativa, a fiscalização e o acompanhamento das demandas da cidade."],
-  ["Suplente e continuidade", "Entender o papel do suplente, a sucessão, a preparação e o compromisso com o mandato."],
-  ["Ética e responsabilidade", "Identificar limites, transparência, controle social e compromisso com a cidade."],
-  ["Propostas e políticas públicas", "Transformar necessidades locais em prioridades para o município e a comunidade."]
+  ["Mandato e representação", "Compreender a importância do mandato, da representação popular e da relação com o eleitor.", "Material do módulo 1", "./courses/vereador-suplente/pdf/aula-01.pdf"],
+  ["Papel do vereador", "Analisar a atuação legislativa, a fiscalização e o acompanhamento das demandas da cidade.", "Material do módulo 2", "./courses/vereador-suplente/pdf/aula-02.pdf"],
+  ["Suplente e continuidade", "Entender o papel do suplente, a sucessão, a preparação e o compromisso com o mandato.", "Material do módulo 3", "./courses/vereador-suplente/pdf/aula-03.pdf"],
+  ["Ética e responsabilidade", "Identificar limites, transparência, controle social e compromisso com a cidade.", "Material do módulo 4", "./courses/vereador-suplente/pdf/aula-04.pdf"],
+  ["Propostas e políticas públicas", "Transformar necessidades locais em prioridades para o município e a comunidade.", "Material do módulo 5", "./courses/vereador-suplente/pdf/aula-05.pdf"]
 ];
 
 export const moduleStudyGuides = [
@@ -45,6 +45,34 @@ export const moduleStudyGuides = [
     ["Políticas públicas", "Acompanhamento", "Resultado"],
     [["Propostas e ações municipais", "https://example.com/propostas#1"]]
   ]
+];
+
+export const finalQuiz = [
+  {
+    question: "Qual é a função principal do mandato de vereador?",
+    options: [
+      { label: "Representar a população com escuta, responsabilidade e atuação pública.", value: "a" },
+      { label: "Buscar prestígio pessoal acima de tudo.", value: "b" },
+      { label: "Ignorar a cidade e os cidadãos.", value: "c" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "O que sustenta a confiança pública no mandato?",
+    options: [
+      { label: "Ética, transparência e compromisso com a cidade.", value: "a" },
+      { label: "Silêncio diante dos problemas e o uso privado do poder.", value: "b" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "Por que a fiscalização e o controle social são essenciais?",
+    options: [
+      { label: "Porque ajudam a acompanhar o uso do dinheiro público e cobrar resultados.", value: "a" },
+      { label: "Porque dispensam a participação popular.", value: "b" }
+    ],
+    correct: "a"
+  }
 ];
 
 export const moduleQuestions = [

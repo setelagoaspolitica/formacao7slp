@@ -1,8 +1,10 @@
 import { requireEnrollment, db } from "./auth.js";
 import { ref, get } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
-import { courseInfo, modules } from "./courses/formacao-centro-esquerda/course.js";
+import { getCourseModulePath } from "./course-catalog.js";
 
 const $ = (selector) => document.querySelector(selector);
+const selectedCourseId = localStorage.getItem("selectedCourseId") || "formacao-centro-esquerda";
+const { courseInfo, modules } = await import(getCourseModulePath(selectedCourseId));
 
 try {
   const user = await requireEnrollment();

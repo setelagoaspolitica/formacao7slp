@@ -1,7 +1,10 @@
 import { requireEnrollment, leaveCourse, db } from "./auth.js";
 import { ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
-import { courseInfo, modules, moduleQuestions, moduleStudyGuides, loadMediaLinks, mediaFrameUrl } from "./courses/formacao-centro-esquerda/course.js";
+import { getCourseModulePath } from "./course-catalog.js";
 import { getGamificationState } from "./gamification.js";
+
+const selectedCourseId = localStorage.getItem("selectedCourseId") || "formacao-centro-esquerda";
+const { courseInfo, modules, moduleQuestions, moduleStudyGuides, loadMediaLinks, mediaFrameUrl } = await import(getCourseModulePath(selectedCourseId));
 
 const moduleNumber = Number(document.body.dataset.module);
 const [title, description, sourceTitle, sourceUrl] = modules[moduleNumber - 1];
@@ -55,7 +58,7 @@ try {
     await set(ref(db, `notes/${user.uid}/${button.dataset.noteId}`), null);
   });
 
-  const allMedia = await loadMediaLinks("./courses/formacao-centro-esquerda/links.txt");
+  const allMedia = await loadMediaLinks(`./courses/${selectedCourseId}/links.txt`);
   const media = allMedia.filter((_, index) => index % modules.length === moduleNumber - 1);
   const questions = moduleQuestions[moduleNumber - 1];
   const [objective, summary, examPoints, references] = moduleStudyGuides[moduleNumber - 1];

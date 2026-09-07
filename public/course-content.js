@@ -33,6 +33,34 @@ export const moduleStudyGuides = [
   ["Aprender a olhar um problema do bairro e montar uma proposta possível para começar a resolver.", "Antes de sair prometendo, vamos ouvir as pessoas, entender o problema e montar um plano que caiba na realidade.", ["Diagnóstico e escuta do território", "Como montar uma proposta pública", "Ação coletiva ligada à realidade"], [["Criatividade PSB — p. 20, seção sobre criatividade e compromisso social", "pdf/Criatividade-PSB-Digital.pdf#page=20"], ["Criatividade PSB — p. 42, seção Cidades Criativas", "pdf/Criatividade-PSB-Digital.pdf#page=42"]]]
 ];
 
+export const finalQuiz = [
+  {
+    question: "Na Era do Conhecimento, qual vetor de valor é destacado pela apostila?",
+    options: [
+      { label: "Capital fixo e infraestrutura industrial.", value: "a" },
+      { label: "Capital intelectual, inovação, design, software e criatividade.", value: "b" },
+      { label: "Controle exclusivo de meios físicos de produção.", value: "c" }
+    ],
+    correct: "b"
+  },
+  {
+    question: "Qual diretriz sintetiza a estratégia Recife Digital apresentada na apostila?",
+    options: [
+      { label: "Simplificar, Promover e Cuidar.", value: "a" },
+      { label: "Centralizar, controlar e punir.", value: "b" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "Por que a corrupção é antiética para a apostila?",
+    options: [
+      { label: "Porque limita a concorrência.", value: "a" },
+      { label: "Porque retira direitos e recursos da população vulnerável.", value: "c" }
+    ],
+    correct: "c"
+  }
+];
+
 export const moduleQuestions = [
   [
     ["Para Marx, onde aparece a exploração do trabalhador?", [["Quando a pessoa produz mais valor do que recebe no salário.", true], ["Quando o mercado acaba sozinho com as diferenças entre as classes.", false], ["Quando um grupo pequeno manda sem ouvir ninguém.", false]]],

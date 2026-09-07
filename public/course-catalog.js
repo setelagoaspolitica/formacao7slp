@@ -70,6 +70,11 @@ export function getSelectedCourseId() {
   return localStorage.getItem("selectedCourseId");
 }
 
+export function getCourseModulePath(courseId = getSelectedCourseId() || "formacao-centro-esquerda") {
+  const normalizedId = courseCatalog.some((course) => course.id === courseId) ? courseId : "formacao-centro-esquerda";
+  return `./courses/${normalizedId}/course.js`;
+}
+
 function getEnrolledCourseIds() {
   let enrolledIds = [];
   try {

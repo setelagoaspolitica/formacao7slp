@@ -7,10 +7,10 @@ export const courseInfo = {
 };
 
 export const modules = [
-  ["Participação e território", "Entender como a comunidade organiza demandas, escuta e ação coletiva."],
-  ["Democracia no cotidiano", "Reconhecer a importância do diálogo, da transparência e do compromisso público."],
-  ["Cuidado comunitário", "Identificar formas concretas de agir com responsabilidade para o bem comum."],
-  ["Propostas e ações", "Transformar problemas do bairro em soluções viáveis e compartilhadas."]
+  ["Participação e território", "Entender como a comunidade organiza demandas, escuta e ação coletiva.", "Material do módulo 1", "./courses/cidadania-e-participacao/pdf/aula-01.pdf"],
+  ["Democracia no cotidiano", "Reconhecer a importância do diálogo, da transparência e do compromisso público.", "Material do módulo 2", "./courses/cidadania-e-participacao/pdf/aula-02.pdf"],
+  ["Cuidado comunitário", "Identificar formas concretas de agir com responsabilidade para o bem comum.", "Material do módulo 3", "./courses/cidadania-e-participacao/pdf/aula-03.pdf"],
+  ["Propostas e ações", "Transformar problemas do bairro em soluções viáveis e compartilhadas.", "Material do módulo 4", "./courses/cidadania-e-participacao/pdf/aula-04.pdf"]
 ];
 
 export const moduleStudyGuides = [
@@ -38,6 +38,34 @@ export const moduleStudyGuides = [
     ["Planejamento", "Execução", "Avaliação"],
     [["Como transformar ideias em ação pública", "https://example.com/propostas#1"]]
   ]
+];
+
+export const finalQuiz = [
+  {
+    question: "Qual é o papel principal da participação cidadã?",
+    options: [
+      { label: "Organizar a comunidade para transformar problemas em ação coletiva.", value: "a" },
+      { label: "Manter a população distante das decisões locais.", value: "b" },
+      { label: "Substituir as instituições por ações isoladas.", value: "c" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "O que a transparência pública exige?",
+    options: [
+      { label: "Que a comunidade acompanhe decisões e julgue resultados.", value: "a" },
+      { label: "Que tudo fique escondido da população.", value: "b" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "Como uma proposta cidadã ganha força?",
+    options: [
+      { label: "Com diagnóstico, organização e acompanhamento dos resultados.", value: "a" },
+      { label: "Sem ouvir quem vive a realidade.", value: "b" }
+    ],
+    correct: "a"
+  }
 ];
 
 export const moduleQuestions = [

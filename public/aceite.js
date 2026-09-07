@@ -1,9 +1,11 @@
 import { requireUser, leaveCourse, db } from "./auth.js";
 import { ref, get, set } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
-import { courseInfo, modules } from "./courses/formacao-centro-esquerda/course.js";
+import { getCourseModulePath } from "./course-catalog.js";
 
 const $ = (selector) => document.querySelector(selector);
 const escapeHtml = (value) => { const element = document.createElement("div"); element.textContent = value; return element.innerHTML; };
+const selectedCourseId = localStorage.getItem("selectedCourseId") || "formacao-centro-esquerda";
+const { courseInfo, modules } = await import(getCourseModulePath(selectedCourseId));
 const user = await requireUser();
 document.title = `Termo de aceite | ${courseInfo.shortTitle}`;
 document.querySelector(".brand").textContent = courseInfo.shortTitle;

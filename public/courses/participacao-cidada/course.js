@@ -7,10 +7,10 @@ export const courseInfo = {
 };
 
 export const modules = [
-  ["Cidadania e território", "Entender como a cidadania se expressa no espaço da comunidade e no cotidiano do bairro."],
-  ["Escuta e participação", "Reconhecer a importância de ouvir a população e organizar a ação coletiva."],
-  ["Democracia local", "Compreender os mecanismos democráticos de participação, controle e responsabilidade pública."],
-  ["Propostas para o bairro", "Transformar demandas reais em ações concretas com planejamento e acompanhamento."]
+  ["Cidadania e território", "Entender como a cidadania se expressa no espaço da comunidade e no cotidiano do bairro.", "Material do módulo 1", "./courses/participacao-cidada/pdf/aula-01.pdf"],
+  ["Escuta e participação", "Reconhecer a importância de ouvir a população e organizar a ação coletiva.", "Material do módulo 2", "./courses/participacao-cidada/pdf/aula-02.pdf"],
+  ["Democracia local", "Compreender os mecanismos democráticos de participação, controle e responsabilidade pública.", "Material do módulo 3", "./courses/participacao-cidada/pdf/aula-03.pdf"],
+  ["Propostas para o bairro", "Transformar demandas reais em ações concretas com planejamento e acompanhamento.", "Material do módulo 4", "./courses/participacao-cidada/pdf/aula-04.pdf"]
 ];
 
 export const moduleStudyGuides = [
@@ -38,6 +38,34 @@ export const moduleStudyGuides = [
     ["Planejamento", "Ação", "Acompanhamento"],
     [["Propostas para o bairro", "https://example.com/propostas#1"]]
   ]
+];
+
+export const finalQuiz = [
+  {
+    question: "O que melhor define a participação cidadã no território?",
+    options: [
+      { label: "Ação coletiva para ouvir, organizar e resolver problemas reais da comunidade.", value: "a" },
+      { label: "Apenas acompanhar decisões vindas de fora.", value: "b" },
+      { label: "Manter a população distante das escolhas locais.", value: "c" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "Qual é o papel central da escuta comunitária?",
+    options: [
+      { label: "Identificar demandas reais antes de propor qualquer solução.", value: "a" },
+      { label: "Eliminar a necessidade de diálogo coletivo.", value: "b" }
+    ],
+    correct: "a"
+  },
+  {
+    question: "Por que democracia local depende de transparência?",
+    options: [
+      { label: "Porque permite acompanhar decisões e cobrar resultados com responsabilidade.", value: "a" },
+      { label: "Porque reduz toda a participação ao silêncio.", value: "b" }
+    ],
+    correct: "a"
+  }
 ];
 
 export const moduleQuestions = [
