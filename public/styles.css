@@ -147,3 +147,69 @@
 .notes li > div { min-width:0; flex:1; }
 .sidebar-notebook-link { color:var(--green); font-size:.78rem; font-weight:750; }
 @media (max-width:700px) { .course-header #logout { margin-left:auto; } }
+
+/* Mobile layout guardrails */
+html { overflow-x:hidden; }
+body { min-width:320px; overflow-x:hidden; }
+img, iframe, video { max-width:100%; }
+input, select, textarea { max-width:100%; font:inherit; }
+button, .button { min-height:2.75rem; }
+
+@media (max-width:700px) {
+	.topbar { height:auto; min-height:60px; padding:.75rem 1rem; gap:.7rem; }
+	.topbar nav { flex-wrap:wrap; justify-content:flex-end; gap:.35rem .7rem; }
+	.hero { padding:3.25rem 1.1rem 3.5rem; }
+	h1 { font-size:clamp(2.25rem,12vw,3.5rem); letter-spacing:-.045em; overflow-wrap:anywhere; }
+	h2 { font-size:clamp(1.65rem,8vw,2.25rem); }
+	.section { padding:2.75rem 1.1rem; }
+	.grid { grid-template-columns:1fr; }
+	.modules article { min-height:0; padding:1.25rem; }
+	.login-page { display:block; min-height:100dvh; }
+	.login-shell { width:100%; padding:2rem 1rem; gap:2rem; }
+	.login-shell h1 { font-size:clamp(3rem,16vw,5rem); }
+	.login-card { max-height:none; padding:1.15rem; }
+	.course-header { height:auto; min-height:60px; padding:.7rem 1rem; flex-wrap:wrap; }
+	.course-header .brand { min-width:0; flex:1 1 12rem; overflow-wrap:anywhere; }
+	.course-header #logout { flex:0 0 auto; }
+	.course-layout { min-height:0; }
+	#course-nav { padding:1rem; }
+	#course-nav a { padding:.75rem .35rem; }
+	.module-content { width:100%; padding:2rem 1.1rem 5rem; }
+	.module-content h1 { font-size:clamp(2.25rem,12vw,3.75rem); }
+	.lead { font-size:1.08rem; }
+	.module-actions { align-items:stretch; }
+	.module-actions .button { min-width:0; }
+	.materials li { overflow-wrap:anywhere; }
+	.profile-nav { gap:.45rem; margin-bottom:2rem; }
+	.profile-nav a { padding:.55rem .65rem; }
+	.profile-data { grid-template-columns:1fr; }
+	.profile-section { padding-top:1.5rem; margin-top:2rem; }
+	.acceptance-page { padding:2rem 1rem 4rem; }
+	.acceptance-grid { gap:1rem; margin-top:1.5rem; }
+	.acceptance-section { padding:1.1rem; }
+	.acceptance-check { gap:.55rem; }
+	.acceptance-form button { width:100%; }
+	.mission-heading { gap:1rem; }
+	.mission-footer { margin-top:1rem; }
+	.study-guide { padding:1rem; }
+	.mission-progress > div { align-items:flex-start; }
+	.mission-progress > div span { max-width:70%; }
+	.media-modal { padding:.5rem; }
+	.media-modal-dialog { padding:.8rem; }
+	.certificate-shell { padding:2rem .75rem; }
+	.certificate { margin:1rem 0; padding:2rem 1rem; border-width:6px; }
+	.certificate-meta { gap:1.25rem 2rem; margin:2rem 0; }
+	.certificate-signature { min-width:0; width:100%; }
+	.certificate-actions { flex-direction:column; align-items:stretch; }
+	.certificate-actions .button, .certificate-actions button { width:100%; text-align:center; }
+	.notes li { gap:.6rem; }
+}
+
+@media (max-width:420px) {
+	.login-shell { padding-inline:.75rem; }
+	.login-card { padding:.95rem; }
+	.module-actions { flex-direction:column; }
+	.module-actions .button { width:100%; }
+	.mission-reward { min-width:0; }
+	.progress-summary { display:grid; }
+}
